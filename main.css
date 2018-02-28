@@ -1,0 +1,129 @@
+/*
+******************
+* GENERAL
+******************
+*/
+*{
+box-sizing: border-box;
+}
+h1{
+font-size: 3vw;
+}
+h2{
+font-size: 2.6vw;
+}
+h3{
+font-size: 2.2vw;
+}
+h4{
+font-size: 1.8vw
+}
+h5{
+font-size: 1.4vw;
+}
+h6{
+font-size: 1vw;    
+}
+/*
+******************
+* invitation
+******************
+*/
+.invitation{
+    width: 100%;
+    height: 50vw;
+    background: pink;
+}
+/*
+******************
+* description
+******************
+*/
+.why-important{
+    width: 100%;
+    height: 40vw;
+    display: flex;
+}
+.container-for-video{
+    flex-basis:40%;
+    padding: 5vw;
+}
+.description{
+    flex-basis:60%;
+    padding: 5vw;
+}
+/*
+******************
+* what-you-get
+******************
+*/
+.what-you-get{
+    width: 100%;
+    height: 30vw;
+    display: flex;
+    background: bisque;
+}
+/*
+******************
+* class-help-in
+******************
+*/
+.class-help-in{
+    width: 100%;
+    height: 30vw;
+    background: salmon;
+}
+.help-in-description{
+    display: flex;
+    height: 90%;
+}
+.help-box{
+    background: rosybrown;
+    flex: 1 1 0;
+    margin: 1.6vw;
+}
+/*
+******************
+* cost
+******************
+*/
+.cost{
+    width: 100%;
+    height: 30vw;
+    display: flex;
+}
+.anime-img, .cost-description{
+    flex: 1 1 0;
+}
+/*
+******************
+* program
+******************
+*/
+.program{
+    width: 100%;
+    background: rosybrown;
+    text-align: center;
+}
+table{
+    margin: 2vw;
+}
+table td{
+    padding: 2vw;
+}
+/*
+******************
+* tomer-sharon
+******************
+*/
+.tomer-sharon{
+    width: 100%;
+    height: 30vw;
+    display: flex;
+}
+.social-icons{
+ flex-basis: 40%;
+}
+.about-t-sh{
+    flex-basis: 60%;
+}
