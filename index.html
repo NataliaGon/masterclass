@@ -8,18 +8,28 @@
 </head>
 
 <body>
+    <header class="header">
+        <div class="content-box display-flex">
+            <button class="registration">להרשמה לסדנה</button>
+            <h6>17 באפריל בית ציוני אמריקה</h6>
+            <img id="logo" src="./img/logo.png" alt="logo">
+        </div>
+
+    </header>
     <section class="invitation">
-        <button class="registration">להרשמה לסדנה</button>
-        <h5>17 באפריל בית ציוני אמריקה</h5>
-        <img class="logo">
-        <h4>כיתת-אמן:</h4>
-        <h1>מדידת חוויית משתמש עם תומר שרון</h1>
-        <h4>It’s Our Research- Validating Product Ideas מחבר הספרים</h4>
-        <h4>17 באפריל בית ציוני אמריקה, תל אביב</h4>
+        <div class="content-box">
+            <h4>כיתת-אמן:</h4>
+            <h1>מדידת חוויית משתמש עם תומר שרון</h1>
+            <h6>מחבר הספרים
+                <span>It’s Our Research- Validating Product Ideas </span>
+            </h6>
+            <h6>17 באפריל בית ציוני אמריקה, תל אביב</h6>
+        </div>
     </section>
     <section class="why-important">
+            <div class="content-box display-flex">
         <div class="container-for-video">
-            <iframe width="100%" height="90%" src="https://www.youtube.com/embed/_N1z37KqpCc" frameborder="0" allowfullscreen></iframe>
+            <iframe width="250px" height="180px" src="https://www.youtube.com/embed/_N1z37KqpCc" frameborder="0" allowfullscreen></iframe>
         </div>
         <div class="description">
             <h3>מהי מדידת חווית משתמש ולמה היא חשובה?</h3>
@@ -30,6 +40,7 @@
                 ניתן להבין את מצב המוצר בשוק על בסיס מדידה שיטתית של התנהגות הלקוחות ועמדותיהם. עם סיום כיתת האמן יהיו בידיך
                 יכולות לשימוש מעשי ושיטות מדידה אפקטיביות.
             </h5>
+        </div>
         </div>
     </section>
     <section class="what-you-get">
@@ -214,8 +225,10 @@
 
     </section>
     <section class="map">
+        <div id="map"></div>
         <div class="address-box">
-            <div class="address-picture">pict</div>
+            <div class="address-picture">
+            </div>
             <h3>האירוע יתקיים בבית ציוני אמריקה
             </h3>
             <h6>אודיטוריום מרתה ZOA 1 אבן גבירול 26, תל אביב, 64735</h6>
@@ -308,9 +321,13 @@
             </figure>
 
         </div>
-       <hr>
-       <h4>© כל הזכויות שמורות לCreate</h4>
+        <hr>
+        <h4>© כל הזכויות שמורות לCreate</h4>
     </footer>
+    <script src="main.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCkUOdZ5y7hMm0yrcCQoCvLwzdM6M8s5qk&callback=initMap">
+    </script>
+
 </body>
 
 </html>
