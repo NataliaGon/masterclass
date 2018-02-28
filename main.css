@@ -24,6 +24,12 @@ font-size: 1.4vw;
 h6{
 font-size: 1vw;    
 }
+h1,h2,h3,h4,h5,h6{
+    direction: rtl;
+}
+.clear{
+    clear: both;
+  }
 /*
 ******************
 * invitation
@@ -122,8 +128,105 @@ table td{
     display: flex;
 }
 .social-icons{
- flex-basis: 40%;
+    flex-basis: 40%;
 }
 .about-t-sh{
     flex-basis: 60%;
+}
+/*
+******************
+* finally-in-israel
+******************
+*/
+.finally-in-israel{
+    width: 100%;
+    height: 20vw;
+    display: flex;
+    background: yellow;
+}
+
+.world-box, .finally-in-israel h3   {
+    flex: 1 1 0;
+}
+/*
+******************
+* map
+******************
+*/
+.map{
+    width: 100%;
+    height: 30vw;
+    display: flex;
+    position: relative;
+}
+.address-box{
+    width: 20%;
+    height: 80%;
+    background: black;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+.address-picture{
+    height: 50%;
+}
+.address-box h3, .address-box h6{
+    color: white;
+}
+/*
+******************
+* arrival
+******************
+*/
+.arrival{
+    width: 100%;
+    height: 30vw;
+    display: flex;
+    background: gray;
+}
+/*
+******************
+* text-us
+******************
+*/
+.text-us{
+    width: 100%;
+    height: 10vw;
+    
+}
+/*
+******************
+* footer
+******************
+*/
+.footer{
+    width: 100%;
+    height: 55vw;
+    background: black;
+    padding: 2vw;
+}
+.footer h3, .footer h6, .footer h4{
+    color: white;  
+}
+.footer-text{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    float: right;
+}
+.footer hr{
+    height: 1px;
+    background-color: #D8D8D8;
+    margin-top: 2vw;
+}
+.choose-create{
+    width: 100%;
+    height: 20vw;
+    display: flex;
+}
+.create-option{
+    flex: 1 1 0;
+}
+.footer h4{
+    margin-top: 1vw;
 }
