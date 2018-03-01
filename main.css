@@ -23,6 +23,7 @@ h2{
 font-size: 2.6vw;
 }
 h3{
+font-family: 'almoni-tzar-bold';     
 font-size: 2.2vw;
 }
 h4{
@@ -48,6 +49,18 @@ h1,h2,h3,h4,h5,h6{
 .display-flex{
     display:flex;
 }
+.registration{
+    width: 9.06vw;
+    height: 2.91vw;
+    background-color: #0065ff;
+    border: none;
+    color: white;
+    font-family: 'almoni-tzar';
+    font-size: 1.4vw;
+}
+/* .bold{
+    text-decoration: bold!important;
+} */
 /*
 ******************
 * header
@@ -66,13 +79,6 @@ h1,h2,h3,h4,h5,h6{
     margin-left: 1vw;
     color: white;
 } 
-.registration{
-    width: 174px;
-    height: 56px;
-    background-color: #0065ff;
-    border: none;
-}
-
 /*
 ******************
 * invitation
@@ -85,12 +91,15 @@ h1,h2,h3,h4,h5,h6{
 }
 .invitation .content-box h4{
     font-family: 'almoni-tzar';
+    color: white;
 }
 .invitation .content-box h1{
     font-family: 'almoni-tzar-bold'; 
+    color: white;
 }
 .invitation .content-box h6{
     font-family: 'almoni-tzar';
+    color: white;
 }
 .invitation span{
     text-decoration:underline;
@@ -103,17 +112,25 @@ h1,h2,h3,h4,h5,h6{
 .why-important{
     width: 100%;
     height: auto;
+    padding-top: 5.57vw;
+    padding-bottom: 5.57vw;
 }
 .container-for-video{
     flex-basis:40%;
-    padding: 5vw;
 }
 .description{
     flex-basis:60%;
-    padding: 5vw;
 }
 .description h3{
+    display: block;
+    border-right: 3px solid #0069fb; 
+    padding-right: 1.45vw;
+}
+.description h5{
     font-family: 'almoni-tzar-bold'; 
+    display: block;
+    border-right: 3px solid #0069fb; 
+    padding-right: 1.45vw;
 }
 /*
 ******************
@@ -122,9 +139,41 @@ h1,h2,h3,h4,h5,h6{
 */
 .what-you-get{
     width: 100%;
-    height: 30vw;
-    display: flex;
-    background: bisque;
+    height: 21.6666vw;
+    background: #0069fb;
+}
+.what-you-get .content-box{
+    padding-top: 5.57vw;
+    padding-bottom: 5.57vw;
+    position: relative;
+    height: auto;
+}
+.you-get{
+    flex-basis: 50%;
+}
+.what-you-get h3{
+    flex-basis: 50%;
+    color: white;
+}
+.what-you-get h6{
+    color: white;
+}
+.you-get hr{ 
+    height: 1px;
+    width: 100%;
+    background-color: black;
+    margin-top: 1vw;
+    margin-bottom: 1vw; 
+}
+.rectangle{
+    width: 100%;
+    height: 20px;;
+}
+.rectangle-1{
+    width: 40%;
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
 }
 /*
 ******************
@@ -133,17 +182,34 @@ h1,h2,h3,h4,h5,h6{
 */
 .class-help-in{
     width: 100%;
-    height: 30vw;
-    background: salmon;
+    height: 30vw; 
+}
+.class-help-in h3{
+    margin-right: 1.6vw;
+}
+.class-help-in .content-box{
+    padding-top: 5.57vw;
+    padding-bottom: 5.57vw;
 }
 .help-in-description{
     display: flex;
     height: 90%;
 }
 .help-box{
-    background: rosybrown;
     flex: 1 1 0;
     margin: 1.6vw;
+    border-right: 3px solid;
+    border-image: linear-gradient(#ff318a, #ff7158) 1;
+}
+.help-box h5, .help-box h6{
+    margin-right: 1.5vw;
+}
+.help-box h5{
+    font-family: 'almoni-tzar-bold'; 
+    margin-top: 1.5vw;
+}
+.help-box h6{
+    margin-top: 1vw;
 }
 /*
 ******************
@@ -152,11 +218,39 @@ h1,h2,h3,h4,h5,h6{
 */
 .cost{
     width: 100%;
-    height: 30vw;
-    display: flex;
+    height: 31.875vw;
 }
-.anime-img, .cost-description{
+.cost .content-box {
+    background-color: #f5f5f5;
+}
+.cost-photo, .cost-description{
     flex: 1 1 0;
+}
+.cost-description{
+    margin-top:5.2vw;
+    text-align: right;
+}
+.cost-description div{
+    margin-right: 5.7vw;
+}
+.cost-description div h6{
+    margin-left: 3vw; 
+}
+.cost-description .registration{
+    margin-top: 2.76vw;
+}
+.cost-photo{
+    display: flex;
+    position: relative;
+}
+.side-rectangle-big{
+    width: 21.875vw;
+    opacity: 0.4;
+}
+.anime-img{
+    position: absolute;
+    right: 0px;
+    margin-top:5.2vw;
 }
 /*
 ******************
@@ -201,7 +295,6 @@ table td{
     display: flex;
     background: yellow;
 }
-
 .world-box, .finally-in-israel h3   {
     flex: 1 1 0;
 }
