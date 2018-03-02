@@ -13,6 +13,16 @@
     font-family: 'almoni-tzar-bold';    
     src: url(./fonts/almoni-tzar-aaa-700.woff);   
 }
+@font-face {
+    font-family: 'afek-regular';
+    font-style: normal;
+    font-weight: 100;
+    src: url(./fonts/afek-regular-aaa.woff);    
+}
+@font-face {
+    font-family: 'afek-bold';    
+    src: url(./fonts/afek-bold-aaa.woff);   
+}
 *{
 box-sizing: border-box;
 }
@@ -30,9 +40,11 @@ h4{
 font-size: 1.8vw
 }
 h5{
+font-family: 'afek-regular';
 font-size: 1.4vw;
 }
 h6{
+font-family: 'afek-regular';
 font-size: 1vw;    
 }
 h1,h2,h3,h4,h5,h6{
@@ -45,6 +57,8 @@ h1,h2,h3,h4,h5,h6{
     width: 66%;
     height: 100%;
     margin: auto;
+    padding-top: 5.57vw;
+    padding-bottom: 5.57vw;
 }
 .display-flex{
     display:flex;
@@ -143,8 +157,6 @@ h1,h2,h3,h4,h5,h6{
     background: #0069fb;
 }
 .what-you-get .content-box{
-    padding-top: 5.57vw;
-    padding-bottom: 5.57vw;
     position: relative;
     height: auto;
 }
@@ -186,10 +198,6 @@ h1,h2,h3,h4,h5,h6{
 }
 .class-help-in h3{
     margin-right: 1.6vw;
-}
-.class-help-in .content-box{
-    padding-top: 5.57vw;
-    padding-bottom: 5.57vw;
 }
 .help-in-description{
     display: flex;
@@ -259,7 +267,6 @@ h1,h2,h3,h4,h5,h6{
 */
 .program{
     width: 100%;
-    background: rosybrown;
     text-align: center;
 }
 table{
@@ -268,6 +275,12 @@ table{
 table td{
     padding: 2vw;
 }
+.table-and-img table {
+   width: 70%;
+}
+.group-28{
+    height:  70vw;
+}
 /*
 ******************
 * tomer-sharon
@@ -275,14 +288,20 @@ table td{
 */
 .tomer-sharon{
     width: 100%;
-    height: 30vw;
-    display: flex;
+    height: 41.82vw;
+    background-image:url('./img/researching.png'); 
+    background-size: cover;
+    color: white;
 }
-.social-icons{
-    flex-basis: 40%;
+.tomer-sharon .display-flex{
+    flex-direction: column;
+    align-items: flex-end;
 }
 .about-t-sh{
-    flex-basis: 60%;
+    width: 50%;
+}
+.icon-twitter{
+    font-size: 2vw;
 }
 /*
 ******************
@@ -292,36 +311,47 @@ table td{
 .finally-in-israel{
     width: 100%;
     height: 20vw;
-    display: flex;
-    background: yellow;
 }
-.world-box, .finally-in-israel h3   {
-    flex: 1 1 0;
+.world-box, .finally-in-israel h3{
+    width: 22.44vw;
+}
+.finally-in-israel .display-flex{
+    justify-content: space-between;
+}
+.finally-in-israel img{
+   width:  9.3vw;
 }
 /*
 ******************
 * map
 ******************
 */
-.map{
+#map{
     width: 100%;
-    height: 30vw;
+    height: 25.52vw;
     display: flex;
     position: relative;
 }
 .address-box{
-    width: 20%;
-    height: 80%;
-    background: black;
-    position: absolute;
-    bottom: 0;
-    right: 0;
+    width: 18.82vw;
+    background: #d4d4d4;
 }
-.address-picture{
-    height: 50%;
+.map .content-box{
+    padding-top: 0vw;
+}
+.address-box img{ 
+    width: 100%;
+    margin-top: 2.55vw;
+}  
+.address-box h3{
+    margin-top: 2.239vw;
+}  
+.address-box h6{
+    margin-top: 2vw;
 }
 .address-box h3, .address-box h6{
-    color: white;
+   padding-right: 1.7vw;
+   padding-left: 1.7vw;
 }
 /*
 ******************
@@ -330,9 +360,13 @@ table td{
 */
 .arrival{
     width: 100%;
-    height: 30vw;
-    display: flex;
-    background: gray;
+    height: 30.2vw;  
+}
+.arrival .content-box{
+    border-style: solid;
+    border-width: 3px;
+    border-image-source: linear-gradient(30deg, #ff4978, #ff8348);
+    border-image-slice: 1;
 }
 /*
 ******************
@@ -340,9 +374,48 @@ table td{
 ******************
 */
 .text-us{
+    margin-top: 5.57vw;
     width: 100%;
-    height: 10vw;
-    
+    height: 18.5vw;
+    background-image: linear-gradient(13deg, #ff4978, #ff8348);
+    color: white;
+}
+.text-us .content-box{
+    background-image:url('./img/group-18.png');
+    background-size: 80%;
+    background-repeat: no-repeat;
+    background-position: left;
+    text-align: center;
+}
+/*
+******************
+* create
+******************
+*/
+.create{
+    width: 100%;
+    height: 31.09vw;
+    background-image:url('./img/create.png');
+    background-size: cover;
+    color:white;
+}
+.create:after{
+    background: black;
+    opacity: 0.8;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top:0px;
+    bottom: 0px;
+    left: 0px;
+    right:0px;
+}
+.create h3, .create h5{
+    width: 50%;
+}
+.create .display-flex{
+    flex-direction: column;
+    align-items: flex-end;
 }
 /*
 ******************
@@ -351,32 +424,32 @@ table td{
 */
 .footer{
     width: 100%;
-    height: 55vw;
+    height: 36.6vw;
     background: black;
-    padding: 2vw;
+    color: white; 
 }
-.footer h3, .footer h6, .footer h4{
-    color: white;  
+.footer h4{
+    font-family: 'almoni-tzar';
 }
-.footer-text{
-    width: 40%;
-    display: flex;
-    flex-direction: column;
-    float: right;
-}
-.footer hr{
-    height: 1px;
-    background-color: #D8D8D8;
-    margin-top: 2vw;
+.footer h6, .footer h5{
+    width: 12vw;  
+    font-family: 'almoni-tzar';
 }
 .choose-create{
-    width: 100%;
-    height: 20vw;
-    display: flex;
+    margin-top: 1vw;
 }
-.create-option{
-    flex: 1 1 0;
+.create-option img{
+    height: 10.468vw;
+    width: 12vw;
 }
 .footer h4{
     margin-top: 1vw;
 }
+.footer .display-flex{
+    justify-content: space-between;
+}
+.footer hr{
+    height: 1px;
+    margin-top: 4vw;
+    background-color: #D8D8D8;
+}    
