@@ -25,7 +25,7 @@ var self = window;
 	var cameraZ = 3000, min = cameraZ - 500, max = min * 3;
 			
 	// Audio data			
-	var context, buffer, source, stream, analyser, frequency = [], playButton, createObjectURL, codec = ['.ogg', '.mp3'], mimeType = ['audio/ogg', 'audio/mpeg'], URL = '';		
+	var context, buffer, source, stream, analyser, frequency = [], playButton, createObjectURL, codec = ['.ogg', '.mp3'], mimeType = ['audio/ogg', 'audio/mpeg'], URL = './camila.mp3';		
 				
 	// Dat GUI default value
 	var showStats = false;			

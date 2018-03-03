@@ -7,5 +7,37 @@ function initMap() {
     var marker = new google.maps.Marker({
       position: uluru,
       map: map
+      // icon: {
+      //   document.getElementById,
+      //   scaledSize: new google.maps.Size(96, 96)
+      // }
     });
 }
+
+//arrival
+
+var busBtn = document.getElementById('bus');
+var carBtn = document.getElementById('car');
+var busContent = document.querySelectorAll('.info-for-car');
+var carContent = document.querySelectorAll('.info-for-bus');
+
+busBtn.addEventListener('click', function () {
+  busBtn.style.color = "black";
+  carBtn.style.color = "gray";
+    for (var i of busContent){
+     i.style.display = "block"
+    }
+    for (var i of carContent){
+      i.style.display = "none"
+     } 
+});
+carBtn.addEventListener('click', function () {
+  busBtn.style.color = "gray";
+  carBtn.style.color = "black";
+   for (var i of busContent){
+    i.style.display = "none"
+   }
+   for (var i of carContent){
+     i.style.display = "block"
+    } 
+});
