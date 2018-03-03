@@ -17,7 +17,7 @@
     font-family: 'afek-regular';
     font-style: normal;
     font-weight: 100;
-    src: url(./fonts/afek-regular-aaa.woff);    
+    src: url(./fonts/afek-regular-aaa.otf);    
 }
 @font-face {
     font-family: 'afek-bold';    
@@ -27,28 +27,36 @@
 box-sizing: border-box;
 }
 h1{
-font-size: 3vw;
+    font-family: 'almoni-tzar-bold';     
+    font-size: 2.18vw;
 }
 h2{
-font-size: 2.6vw;
+    font-size: 1.875vw;
 }
 h3{
-font-family: 'almoni-tzar-bold';     
-font-size: 2.2vw;
+    font-family: 'almoni-tzar-bold';     
+    font-size: 1.45vw;
 }
 h4{
-font-size: 1.8vw
+    font-family: 'afek-regular';
+    font-size: 1.25vw
 }
 h5{
-font-family: 'afek-regular';
-font-size: 1.4vw;
+    font-family: 'afek-regular';
+    font-size: 1.14vw;
 }
 h6{
-font-family: 'afek-regular';
-font-size: 1vw;    
+    font-family: 'afek-regular';
+    font-size: 1.041vw;    
 }
 h1,h2,h3,h4,h5,h6{
     direction: rtl;
+}
+a button, a span, a:link{
+    border:none;
+    outline: none;
+    text-decoration: none;
+    color: white;
 }
 .clear{
     clear: both;
@@ -70,7 +78,7 @@ h1,h2,h3,h4,h5,h6{
     border: none;
     color: white;
     font-family: 'almoni-tzar';
-    font-size: 1.4vw;
+    font-size: 1.25vw;
 }
 /* .bold{
     text-decoration: bold!important;
@@ -84,11 +92,25 @@ h1,h2,h3,h4,h5,h6{
     width: 100%;
     height: 86px;
     background: black;
+    position: fixed;
+    top:0px;
+    left:0px;
+    right:0px;
+    z-index: 4;
+}
+.header .content-box{
+    padding-top: 0px;
+    padding-bottom: 0px;
 }
 .header .display-flex{
     align-items: center;
     justify-content: space-between;
-}   
+}  
+.header div{
+    display: flex;
+    align-items: center;
+} 
+
 .header h6{
     margin-left: 1vw;
     color: white;
@@ -99,25 +121,26 @@ h1,h2,h3,h4,h5,h6{
 ******************
 */
 .invitation{
+    margin-top: 86px;
     width: 100%;
     height: 37.3958vw;
-    background: pink;
-}
-.invitation .content-box h4{
-    font-family: 'almoni-tzar';
+    background-image: linear-gradient(210deg, #ff318a, #ff7158);
     color: white;
 }
 .invitation .content-box h1{
-    font-family: 'almoni-tzar-bold'; 
-    color: white;
+   font-size: 3.33vw;
 }
-.invitation .content-box h6{
-    font-family: 'almoni-tzar';
-    color: white;
+.invitation .content-box h2{
+    font-family: 'almoni-tzar'; 
+    margin-top: 4vw;
 }
+.invitation .content-box h4{
+    font-family: 'almoni-tzar';  
+}
+
 .invitation span{
     text-decoration:underline;
-}
+}  
 /*
 ******************
 * description
@@ -135,13 +158,12 @@ h1,h2,h3,h4,h5,h6{
 .description{
     flex-basis:60%;
 }
-.description h3{
+.description h1{
     display: block;
     border-right: 3px solid #0069fb; 
     padding-right: 1.45vw;
 }
-.description h5{
-    font-family: 'almoni-tzar-bold'; 
+.description h4{
     display: block;
     border-right: 3px solid #0069fb; 
     padding-right: 1.45vw;
@@ -163,11 +185,8 @@ h1,h2,h3,h4,h5,h6{
 .you-get{
     flex-basis: 50%;
 }
-.what-you-get h3{
+.what-you-get h1{
     flex-basis: 50%;
-    color: white;
-}
-.what-you-get h6{
     color: white;
 }
 .you-get hr{ 
@@ -196,7 +215,7 @@ h1,h2,h3,h4,h5,h6{
     width: 100%;
     height: 30vw; 
 }
-.class-help-in h3{
+.class-help-in h1{
     margin-right: 1.6vw;
 }
 .help-in-description{
@@ -209,11 +228,10 @@ h1,h2,h3,h4,h5,h6{
     border-right: 3px solid;
     border-image: linear-gradient(#ff318a, #ff7158) 1;
 }
-.help-box h5, .help-box h6{
+.help-box h3, .help-box h6{
     margin-right: 1.5vw;
 }
-.help-box h5{
-    font-family: 'almoni-tzar-bold'; 
+.help-box h3{
     margin-top: 1.5vw;
 }
 .help-box h6{
@@ -230,6 +248,8 @@ h1,h2,h3,h4,h5,h6{
 }
 .cost .content-box {
     background-color: #f5f5f5;
+    padding-top: 0px;
+    padding-bottom: 0px;
 }
 .cost-photo, .cost-description{
     flex: 1 1 0;
@@ -241,7 +261,7 @@ h1,h2,h3,h4,h5,h6{
 .cost-description div{
     margin-right: 5.7vw;
 }
-.cost-description div h6{
+.cost-description div h4{
     margin-left: 3vw; 
 }
 .cost-description .registration{
@@ -272,6 +292,10 @@ h1,h2,h3,h4,h5,h6{
 table{
     margin: 2vw;
 }
+table ul li{
+    font-family: 'afek-regular';
+    font-size: 1.041vw; 
+}
 table td{
     padding: 2vw;
 }
@@ -300,8 +324,15 @@ table td{
 .about-t-sh{
     width: 50%;
 }
+.tomer-sharon h6{
+    margin-top: 2vw;
+    line-height: 1.5vw;
+}
 .icon-twitter{
     font-size: 2vw;
+}
+.social-icons{
+    margin-top: 2vw;
 }
 /*
 ******************
@@ -312,7 +343,7 @@ table td{
     width: 100%;
     height: 20vw;
 }
-.world-box, .finally-in-israel h3{
+.world-box, .finally-in-israel h1{
     width: 22.44vw;
 }
 .finally-in-israel .display-flex{
@@ -343,13 +374,14 @@ table td{
     width: 100%;
     margin-top: 2.55vw;
 }  
-.address-box h3{
+.address-box h2{
+    font-family: 'almoni-tzar-bold'; 
     margin-top: 2.239vw;
 }  
 .address-box h6{
     margin-top: 2vw;
 }
-.address-box h3, .address-box h6{
+.address-box h2, .address-box h6{
    padding-right: 1.7vw;
    padding-left: 1.7vw;
 }
@@ -367,6 +399,25 @@ table td{
     border-width: 3px;
     border-image-source: linear-gradient(30deg, #ff4978, #ff8348);
     border-image-slice: 1;
+    justify-content: flex-end;
+}
+.isntructions{
+    text-align: right;
+    width: 30%;
+    margin-right: 2vw;
+}
+.bus-or-car{
+    width: 30%;
+    margin-right:5.6vw;
+}
+.isntructions button{
+    width: 9.06vw;
+    height: 2.91vw;
+    background-color: white;
+    border: 3px solid #0065ff;
+    color: #0065ff;
+    font-family: 'almoni-tzar-bold';
+    font-size: 1.25vw;
 }
 /*
 ******************
@@ -398,11 +449,13 @@ table td{
     background-image:url('./img/create.png');
     background-size: cover;
     color:white;
+    position: relative;
 }
 .create:after{
     background: black;
     opacity: 0.8;
     position: absolute;
+    content: " ";
     width: 100%;
     height: 100%;
     top:0px;
@@ -410,12 +463,16 @@ table td{
     left: 0px;
     right:0px;
 }
-.create h3, .create h5{
+.create .content-box{
+    position: relative;
+}
+.create .content-box div{
+    position: absolute;
+    z-index: 3;
     width: 50%;
 }
 .create .display-flex{
-    flex-direction: column;
-    align-items: flex-end;
+    justify-content: flex-end;
 }
 /*
 ******************
@@ -429,11 +486,10 @@ table td{
     color: white; 
 }
 .footer h4{
-    font-family: 'almoni-tzar';
+    font-family: 'almoni-tzar-bold'; 
 }
-.footer h6, .footer h5{
+.choose-create h6, .choose-create h4{
     width: 12vw;  
-    font-family: 'almoni-tzar';
 }
 .choose-create{
     margin-top: 1vw;
