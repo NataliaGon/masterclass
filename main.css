@@ -30,31 +30,31 @@
 
 h1{
     font-family: 'almoni-tzar-bold';     
-    font-size: 2.18vw;
+    font-size: 42px;
 }
 h2{
-    font-size: 1.875vw;
+    font-size: 36px;
 }
 h3{
     font-family: 'almoni-tzar-bold';     
-    font-size: 1.45vw;
+    font-size: 28px;
 }
 h4{
     font-family: 'afek-regular';
-    font-size: 1.25vw
+    font-size: 24px;
 }
 h5{
     font-family: 'afek-regular';
-    font-size: 1.14vw;
+    font-size: 22px;
 }
 h6{
     font-family: 'afek-regular';
-    font-size: 1.041vw;    
+    font-size: 20;    
 }
 h1,h2,h3,h4,h5,h6{
     direction: rtl;
 }
-a button, a span, a:link{
+a button, a span, a figure, a:link{
     border:none;
     outline: none;
     text-decoration: none;
@@ -64,7 +64,7 @@ a button, a span, a:link{
     clear: both;
 }
 .content-box{
-    width: 66%;
+    width: 90%;
     height: 100%;
     margin: auto;
     padding-top: 5.57vw;
@@ -81,10 +81,10 @@ a button, a span, a:link{
     color: white;
     font-family: 'almoni-tzar';
     font-size: 1.25vw;
+    font-weight: 800;
+    letter-spacing: 1px;
 }
-/* .bold{
-    text-decoration: bold!important;
-} */
+
 /*
 ******************
 * header
@@ -281,7 +281,16 @@ a button, a span, a:link{
     position: absolute;
     right: 0px;
     margin-top:5.2vw;
+    text-align: right;
 }
+.anime-img img{
+    width: 80%;
+}
+.anime-img figcaption h6{
+    margin-left: 40%;
+    text-align: right;
+}
+
 /*
 ******************
 * program
@@ -293,13 +302,23 @@ a button, a span, a:link{
 }
 table{
     margin: 2vw;
-}
-table ul li{
     font-family: 'afek-regular';
     font-size: 1.041vw; 
+    
+}
+table tr{
+    border-bottom: 1px solid gray;
+}
+table span{
+    font-family: 'almoni-tzar-bold';     
+    font-size: 1.45vw;
+}
+table img{
+    width: 70%;
 }
 table td{
     padding: 2vw;
+    text-align: right;
 }
 .table-and-img table {
    width: 70%;
@@ -331,7 +350,11 @@ table td{
     line-height: 1.5vw;
 }
 .icon-twitter{
-    font-size: 2vw;
+    font-size: 2.7vw;
+    margin-right: 1vw;
+}
+.icon-linkedin2{
+    font-size: 2.8vw;
 }
 .social-icons{
     margin-top: 2vw;
@@ -551,6 +574,23 @@ table td{
 .create-option img{
     height: 10.468vw;
     width: 12vw;
+    position: relative;
+}
+.create-option{
+    position: relative;
+}
+.create-option div:hover:after{
+    background-image: linear-gradient(rgba(255, 255, 255, 0.35), rgba(255, 255, 255, 0.35)), linear-gradient(46deg, #ff4978, #ff8348);
+    background-blend-mode: normal, overlay;
+    opacity: 0.9;
+    position: absolute;
+    content: " ";
+    width: 100%;
+    height: 10.468vw;
+    top:0px;
+    bottom: 0px;
+    left: 0px;
+    right:0px;
 }
 .footer h4{
     margin-top: 1vw;

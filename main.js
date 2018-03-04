@@ -1,3 +1,4 @@
+//map
 function initMap() {
     var uluru = {lat: 32.0746012, lng: 34.7823722};
     var map = new google.maps.Map(document.getElementById('map'), {
@@ -18,8 +19,8 @@ function initMap() {
 
 var busBtn = document.getElementById('bus');
 var carBtn = document.getElementById('car');
-var busContent = document.querySelectorAll('.info-for-car');
-var carContent = document.querySelectorAll('.info-for-bus');
+var busContent = document.querySelectorAll('.info-for-bus');
+var carContent = document.querySelectorAll('.info-for-car');
 
 busBtn.addEventListener('click', function () {
   busBtn.style.color = "black";
@@ -41,3 +42,6 @@ carBtn.addEventListener('click', function () {
      i.style.display = "block"
     } 
 });
+
+//fonts-animation
+

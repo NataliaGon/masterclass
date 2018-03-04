@@ -5,7 +5,11 @@
     <title>MasterClass</title>
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="fonts-social.css">
+    <link rel="stylesheet" href="https://yourwebsite.com/style.css">
+    <link rel="stylesheet" href="https://codepen.io/username/pen/aBcDef">
+    <link rel="stylesheet" href="canvas.css">
     <link rel="stylesheet" href="main.css">
+
     <base target="_blank">
 </head>
 
@@ -25,13 +29,17 @@
     </header>
     <section class="invitation">
         <div class="content-box">
-            <h2>כיתת-אמן:</h2>
-            <h1>מדידת חוויית משתמש עם תומר שרון</h1>
-            <h4>מחבר הספרים
-                <span>It’s Our Research- Validating Product Ideas </span>
-            </h4>
-            <h4>17 באפריל בית ציוני אמריקה, תל אביב</h4>
-        </div>
+            <div>
+                <h2>כיתת-אמן:</h2>
+            </div>
+            <div>
+                <div class="play"></div>
+                <h1>מדידת חוויית משתמש עם תומר שרון</h1>
+                <h4>מחבר הספרים
+                    <span>It’s Our Research- Validating Product Ideas </span>
+                </h4>
+                <h4>17 באפריל בית ציוני אמריקה, תל אביב</h4>
+            </div>
     </section>
     <section class="why-important">
         <div class="content-box display-flex">
@@ -93,15 +101,9 @@
     <section class="cost">
         <div class="content-box display-flex">
             <div class="cost-photo">
-                <img class="side-rectangle-big" src="./img/rectangle.png" alt="">
+                <img class="side-rectangle-big" src="./img/rectangle-big.png" alt="">
                 <figure class="anime-img">
-                    <div style="width:100%;height:0;padding-bottom:53%;position:relative;">
-                        <iframe src="https://giphy.com/embed/wLTJn2Tnbi240" width="100%" height="100%" style="position:absolute" frameBorder="0"
-                            class="giphy-embed" allowFullScreen></iframe>
-                    </div>
-                    <p>
-                        <a href="https://giphy.com/gifs/line-lemurs-ludicrously-wLTJn2Tnbi240"></a>
-                    </p>
+                    <img src="./img/source.gif">
                     <figcaption>
                         <h6>
                             מספר המקומות מצומצם מאוד אז מומלץ לא לחכות עם ההרשמה
@@ -130,7 +132,8 @@
             <div class="table-and-img display-flex">
                 <table>
                     <tr>
-                        <td>
+
+                        <td colspan="2">
                             <h3>התכנסות - ארוחת בוקר קלה של מאפים וסנדויצ'ים
                             </h3>
                         </td>
@@ -151,14 +154,18 @@
 
                         </td>
                         <td>
-                            9:00- 10:30
-                            <h3>
+                            <span>
                                 מבוא
-                            </h3>
+                            </span>
+                        </td>
+                        <td>
+                            9:00- 10:30
+
                         </td>
 
                     </tr>
                     <tr>
+                        <td></td>
                         <td>
                             הפסקת קפה וכיבוד</td>
                         <td>10:30-11:00</td>
@@ -178,13 +185,19 @@
 
                         </td>
                         <td>
+                            <span>מודל HEART של Google
+                            </span>
+                        </td>
+                        <td>
                             11:00-12:30
-                            <h3>מודל HEART של Google
-                            </h3>
+
                         </td>
 
                     </tr>
                     <tr>
+                        <td>
+                            <img src="./img/hamster.gif">
+                        </td>
                         <td>
                             הפסקת צהריים - ארוחה מפנקת במקום</td>
                         <td>12:30-13:30</td>
@@ -202,13 +215,16 @@
 
                         </td>
                         <td>
+                            <span>סקרי לקוחות</span>
+                        </td>
+                        <td>
                             13:30-15:00
-                            <h3>סקרי לקוחות
-                            </h3>
+
                         </td>
 
                     </tr>
                     <tr>
+                        <td></td>
                         <td>
                             הפסקת קפה וכיבוד</td>
                         <td>15:00-15:30</td>
@@ -222,15 +238,14 @@
                                 <li>הצגה ויזואלית אפקטיבית של נתונים</li>
                                 <li> שאלון: טכניקות מדידה</li>
                                 <li> שאלות ותשובות וסיום</li>
-
-
                             </ul>
-
+                        </td>
+                        <td>
+                            <span>איך מודדים חוויה</span>
                         </td>
                         <td>
                             15:30-17:00
-                            <h3>איך מודדים חוויה
-                            </h3>
+
                         </td>
 
                     </tr>
@@ -261,7 +276,7 @@
                     <span class="icon-twitter" title="Visit us on Twitter"></span>
                 </a>
                 <a href="https://www.linkedin.com/in/tomersharon">
-                    <span class="icon-linkedin2" title="Visit us on Twitter"></span>
+                    <span class="icon-linkedin2" title="Visit us on LinkedIn"></span>
                 </a>
             </div>
         </div>
@@ -375,49 +390,69 @@
         <div class="content-box">
             <h1>קצת עלינו</h1>
             <div class="choose-create display-flex">
-                <figure class="create-option">
-                    <img src="./img/footer1.png">
-                    <figcaption>
-                        <h4>
-                            התוכנית לגיבוש פורטפוליו למעצבים
-                        </h4>
-                    </figcaption>
-                </figure>
-                <figure class="create-option">
-                    <img src="./img/footer2.png">
-                    <figcaption>
-                        <h4>
-                            למדו על התוכנית לאפיון ועיצוב חווית משתמש
-                        </h4>
-                    </figcaption>
-                </figure>
-                <figure class="create-option">
-                    <img src="./img/footer3.png">
-                    <figcaption>
-                        <h4>
-                            קבלו השראה יומית
-                        </h4>
-                        <h6>הצטרפו לקהילת הפייסבוק שלנו וקבלו עדכונים חמים ומקצועיים (וגם ממש מגניבים)</h6>
-                    </figcaption>
-                </figure>
-                <figure class="create-option">
-                    <img src="./img/footer4.png">
-                    <figcaption>
-                        <h4>
-                            הישארו מעודכנים
-                        </h4>
-                        <h6>בואו לקרוא במגזין שלנו על התחומים הכי חמים מעולם חווית המשתמש והכל בעברית</h6>
-                    </figcaption>
-                </figure>
-                <figure class="create-option">
-                    <img src="./img/footer5.png">
-                    <figcaption>
-                        <h4>
-                            למדו עלינו עוד
-                        </h4>
-                        <h6>בקרו באתר הבית של create</h6>
-                    </figcaption>
-                </figure>
+                <a href="http://www.createfuture.co.il/course/%D7%A2%D7%99%D7%A6%D7%95%D7%91-%D7%9E%D7%95%D7%A6%D7%A8-%D7%93%D7%99%D7%92%D7%99%D7%98%D7%9C%D7%99/">
+                    <figure class="create-option">
+                        <div>
+                            <img src="./img/footer1.png">
+                        </div>
+                        <figcaption>
+                            <h4>
+                                התוכנית לגיבוש פורטפוליו למעצבים
+                            </h4>
+                        </figcaption>
+                    </figure>
+                </a>
+                <a href="http://www.createfuture.co.il/course/user-experience-ux/">
+                    <figure class="create-option">
+                        <div>
+                            <img src="./img/footer2.png">
+                        </div>
+                        <figcaption>
+                            <h4>
+                                למדו על התוכנית לאפיון ועיצוב חווית משתמש
+                            </h4>
+                        </figcaption>
+                    </figure>
+                </a>
+                <a href="https://www.facebook.com/create.somthing.you.love/">
+                    <figure class="create-option">
+                        <div>
+                            <img src="./img/footer3.png">
+                        </div>
+                        <figcaption>
+                            <h4>
+                                קבלו השראה יומית
+                            </h4>
+                            <h6>הצטרפו לקהילת הפייסבוק שלנו וקבלו עדכונים חמים ומקצועיים (וגם ממש מגניבים)</h6>
+                        </figcaption>
+                    </figure>
+                </a>
+                <a href="http://createmagazine.co.il/">
+                    <figure class="create-option">
+                        <div>
+                            <img src="./img/footer4.png">
+                        </div>
+                        <figcaption>
+                            <h4>
+                                הישארו מעודכנים
+                            </h4>
+                            <h6>בואו לקרוא במגזין שלנו על התחומים הכי חמים מעולם חווית המשתמש והכל בעברית</h6>
+                        </figcaption>
+                    </figure>
+                </a>
+                <a href="http://www.createfuture.co.il/">
+                    <figure class="create-option">
+                        <div>
+                            <img src="./img/footer5.png">
+                        </div>
+                        <figcaption>
+                            <h4>
+                                למדו עלינו עוד
+                            </h4>
+                            <h6>בקרו באתר הבית של create</h6>
+                        </figcaption>
+                    </figure>
+                </a>
             </div>
             <hr>
             <h6>© כל הזכויות שמורות לCreate</h6>
@@ -425,7 +460,43 @@
 
     </footer>
     <script src="main.js"></script>
-    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAIZeXJLPjwdqvHS35Tb1ulxq0VK6xnClo&callback=initMap">
+    <script type="x-shader/x-vertex" id="vertex">
+			
+        attribute float size;
+        uniform float bass;
+                    
+        void main() {
+                            
+              vec4 mvPosition = modelViewMatrix * vec4(position, 1.0);
+            
+                gl_PointSize = size * bass * (100.0 / length(mvPosition.xyz));
+            
+                gl_Position = projectionMatrix * mvPosition;
+        
+        }
+        
+    </script>
+
+    <script type="x-shader/x-fragment" id="fragment">
+        
+        uniform vec3 color;
+        uniform sampler2D texture;
+        uniform float opacity;
+        
+        void main() {
+        
+                vec4 outColor = texture2D(texture, gl_PointCoord);
+        
+                gl_FragColor = outColor * vec4(color, opacity);
+                        
+        }
+        
+    </script>
+    <script src="canvas.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r68/three.min.js"></script>
+    <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16395/tween.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/stats.js/r11/Stats.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/dat-gui/0.5/dat.gui.min.js"></script>
     </script>
 
 </body>
