@@ -169,7 +169,7 @@ body{
 .invitation{
     margin-top: 86px;
     width: auto;
-    height: 49.45vw;
+    height: 45vw;
     background-image: linear-gradient(210deg, #ff318a, #ff7158);
     color: white;
 }
@@ -178,7 +178,7 @@ body{
 }
 .invitation .content-box h2{
     font-family: 'almoni-tzar'; 
-    margin-top: 5.6vw;
+    margin-top: 5vw;
 }
 .invitation .content-box h4{
     font-family: 'almoni-tzar';  
@@ -189,6 +189,9 @@ body{
 #box-for-text-invitation{
     margin-right:  7vw;
 }
+#font-almani{
+    font-family: 'almoni-tzar';
+}
 /*
 ******************
 * description
@@ -197,6 +200,7 @@ body{
 .why-important{
     width: 100%;
     height: 54.4vw;  
+    background:  #f3f3f3;
 }
 .container-for-video{
     flex-basis:50%;
@@ -206,14 +210,14 @@ body{
 }
 .description h1{
     display: block;
-    border-right: 3px solid #0069fb; 
-    padding-right: 1.45vw;
+    border-right: 5px solid #0069fb; 
+    padding-right: 2.18vw;
     letter-spacing: normal;
 }
 .description h4{
     display: block;
-    border-right: 3px solid #0069fb; 
-    padding-right: 1.45vw;
+    border-right: 5px solid #0069fb; 
+    padding-right: 2.18vw;
 }
 /*
 ******************
@@ -277,9 +281,11 @@ body{
     border-image: linear-gradient(#ff318a, #ff7158) 1;
 }
 .help-box h3, .help-box h6{
-    margin-right: 1.5vw;
+    margin-right: 3vw;
     line-height: 1.5;
+    
 }
+
 .help-box h3{
     margin-top: 1.5vw;
 }
@@ -354,6 +360,10 @@ body{
 }
 .program .display-flex{
     justify-content: center;
+    
+}
+.program .content-box{
+    padding-top: 6.25vw;
 }
 #title-for-program{
     margin-right: 12vw;  
@@ -388,7 +398,7 @@ table tr:last-child{
 }
 table span{
     font-family: 'almoni-tzar-bold';     
-    font-size: 1.45vw;
+    font-size: 28px;
 }
 table img{
     width: 50%;
@@ -396,6 +406,8 @@ table img{
 table td{
     padding: 2vw;
     text-align: right;
+    padding-top: 2.7vw;
+    padding-bottom: 2.7vw;
 }
 .group-28{
     height: 180vh;
@@ -403,15 +415,17 @@ table td{
 }
 table .enlish-font{
     font-weight: 900;
+    font-size: 28px;
+    line-height: 34px;
 }
 table ul{
     direction: rtl;
     list-style-type: square;
-    margin-top: -0.5vw;
 }
 table ul li{
     line-height: 1.8;
 }
+
 /*
 ******************
 * tomer-sharon
@@ -420,7 +434,7 @@ table ul li{
 .tomer-sharon{
     width: 100%;
     height: 62vw;
-    max-height: 803px; 
+    /* max-height: 803px;  */
     background: black;
     background-image:url('./img/sharon.png'); 
     background-size: contain;
@@ -436,10 +450,7 @@ table ul li{
     width: 50%;
 }
 .tomer-sharon h6{
-    line-height: 27px;
-}
-.about-t-sh h1{
-    
+    line-height: 30px;
 }
 .icon-twitter{
     font-size: 2.7vw;
@@ -510,7 +521,7 @@ table ul li{
    padding-left: 1.7vw; 
 }
 #box-for-text-in-adress-box{
-    border-right: 3px solid #0069fb; 
+    border-right: 5px solid #0069fb; 
     padding-right: 0.5vw;
     width: 90%;
 }
@@ -642,6 +653,9 @@ table ul li{
 .info-for-bus{
     display: none;
 }
+.isntructions h5{
+    line-height: 34px;
+}
 /*
 ******************
 * text-us
@@ -670,11 +684,12 @@ table ul li{
 ******************
 */
 .create{
-    width: 100%;
-    height: 28vw;
-    background-color:rgb(128, 118, 118);
-    background-image:url('./img/create.png');
-    background-size: contain;
+    width: 100vw;
+    height: 46.64vw;
+    /* max-height: 597px; */
+    background-color:rgb(8, 8, 8);
+    background-image:url('./img/girls.png');
+    background-size: cover;
     background-repeat: no-repeat;
     color:white;
     position: relative;
@@ -694,15 +709,20 @@ table ul li{
 }
 .create .content-box{
     position: relative;
-    padding-top: 1vw;
+}
+.create .display-flex{
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
 }
 .create .content-box div{
     position: absolute;
     z-index: 3;
     width: 50%;
 }
-.create .display-flex{
-    justify-content: flex-end;
+.create h6{
+    margin-top: 1vw;
+    line-height: 30px;
 }
 .logo-red{
     margin-top: -10px;
