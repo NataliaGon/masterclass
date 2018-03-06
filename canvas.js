@@ -121,9 +121,9 @@ var self = window;
 		container.height = innerHeight;
 		
 		container.style.position = 'absolute';
-		container.style.top = '-3vw';
+		container.style.top = '4vw';
 		container.style.bottom = 0;
-		container.style.left = '-25vw';
+		container.style.left = '-30vw';
 		container.style.right = 0;
 		// container.style.zIndex = -1;
 		container.style.overflow = 'hidden';

@@ -7,7 +7,7 @@
     font-family: 'almoni-tzar';
     font-style: normal;
     font-weight: 100;
-    src: url(./fonts/almoni-tzar-aaa-100.woff);    
+    src: url(./fonts/almoni-tzar-aaa-300.woff);    
 }
 @font-face {
     font-family: 'almoni-tzar-bold';    
@@ -17,17 +17,25 @@
     font-family: 'afek-regular';
     font-style: normal;
     font-weight: 100;
-    src: url(./fonts/afek-regular-aaa.otf);    
+    src: url(./fonts/afek-light-aaa.otf);    
 }
 @font-face {
     font-family: 'afek-bold';    
     src: url(./fonts/afek-bold-aaa.woff);   
+
+}
+@font-face {
+    font-family: 'Lucida';    
+    src: url(./fonts/Lucida-Sans-Regular.ttf);   
+}
+@font-face {
+    font-family: 'almoni-tzar-light';    
+    src: url(./fonts/Lucida-Sans-Regular.ttf);   
 }
 *{
-    box-sizing: border-box;
-    
+    box-sizing: border-box; 
+    letter-spacing: normal;; 
 }
-
 h1{
     font-family: 'almoni-tzar-bold';     
     font-size: 42px;
@@ -42,17 +50,51 @@ h3{
 h4{
     font-family: 'afek-regular';
     font-size: 24px;
+    line-height: 36px;
+    letter-spacing: 0.3px;
 }
 h5{
     font-family: 'afek-regular';
     font-size: 22px;
+    letter-spacing: 0.01;
+    letter-spacing: 0.3px;
 }
 h6{
     font-family: 'afek-regular';
-    font-size: 20;    
+    font-size: 20px;  
+    letter-spacing: 0.01;
+    letter-spacing: 0.3px;
+}
+@media (max-width: 1279px){
+    h1{
+        font-family: 'almoni-tzar-bold';     
+        font-size: 2.18vw;
+    }
+    h2{
+        font-size: 1.875vw;
+    }
+    h3{
+        font-family: 'almoni-tzar-bold';     
+        font-size: 1.45vw;
+    }
+    h4{
+        font-family: 'afek-regular';
+        font-size: 1.25vw
+    }
+    h5{
+        font-family: 'afek-regular';
+        font-size: 1.14vw;
+    }
+    h6{
+        font-family: 'afek-regular';
+        font-size: 1.041vw;    
+    }
 }
 h1,h2,h3,h4,h5,h6{
     direction: rtl;
+}
+.enlish-font{
+    font-family: 'Lucida';
 }
 a button, a span, a figure, a:link{
     border:none;
@@ -64,27 +106,29 @@ a button, a span, a figure, a:link{
     clear: both;
 }
 .content-box{
-    width: 90%;
+    width: 93.7%;
     height: 100%;
     margin: auto;
-    padding-top: 5.57vw;
-    padding-bottom: 5.57vw;
+    padding-top: 7.8vw;
+    padding-bottom: 7.8vw;
 }
 .display-flex{
     display:flex;
 }
 .registration{
-    width: 9.06vw;
-    height: 2.91vw;
+    width: 174px;
+    height: 56px;
+    line-height: 22px;
     background-color: #0065ff;
     border: none;
     color: white;
     font-family: 'almoni-tzar';
-    font-size: 1.25vw;
+    font-size: 24px;
     font-weight: 800;
-    letter-spacing: 1px;
 }
-
+body{
+    overflow-x: hidden;
+}
 /*
 ******************
 * header
@@ -124,25 +168,27 @@ a button, a span, a figure, a:link{
 */
 .invitation{
     margin-top: 86px;
-    width: 100%;
-    height: 37.3958vw;
+    width: auto;
+    height: 49.45vw;
     background-image: linear-gradient(210deg, #ff318a, #ff7158);
     color: white;
 }
 .invitation .content-box h1{
-   font-size: 3.33vw;
+   font-size: 64px;
 }
 .invitation .content-box h2{
     font-family: 'almoni-tzar'; 
-    margin-top: 4vw;
+    margin-top: 5.6vw;
 }
 .invitation .content-box h4{
     font-family: 'almoni-tzar';  
 }
-
 .invitation span{
     text-decoration:underline;
 }  
+#box-for-text-invitation{
+    margin-right:  7vw;
+}
 /*
 ******************
 * description
@@ -150,20 +196,19 @@ a button, a span, a figure, a:link{
 */
 .why-important{
     width: 100%;
-    height: auto;
-    padding-top: 5.57vw;
-    padding-bottom: 5.57vw;
+    height: 54.4vw;  
 }
 .container-for-video{
-    flex-basis:40%;
+    flex-basis:50%;
 }
 .description{
-    flex-basis:60%;
+    flex-basis:50%;
 }
 .description h1{
     display: block;
     border-right: 3px solid #0069fb; 
     padding-right: 1.45vw;
+    letter-spacing: normal;
 }
 .description h4{
     display: block;
@@ -177,17 +222,17 @@ a button, a span, a figure, a:link{
 */
 .what-you-get{
     width: 100%;
-    height: 21.6666vw;
+    height: 32.5vw;
     background: #0069fb;
+    position: relative;
 }
 .what-you-get .content-box{
-    position: relative;
     height: auto;
 }
 .you-get{
     flex-basis: 50%;
 }
-.what-you-get h1{
+.what-you-get h1, .you-get{
     flex-basis: 50%;
     color: white;
 }
@@ -195,18 +240,19 @@ a button, a span, a figure, a:link{
     height: 1px;
     width: 100%;
     background-color: black;
-    margin-top: 1vw;
-    margin-bottom: 1vw; 
+    margin-top: 2vw;
+    margin-bottom: 2vw; 
 }
 .rectangle{
     width: 100%;
     height: 20px;;
 }
 .rectangle-1{
-    width: 40%;
+    width: 30%;
     position: absolute;
     bottom: 0px;
     right: 0px;
+    margin-right: 3.15vw;
 }
 /*
 ******************
@@ -215,23 +261,24 @@ a button, a span, a figure, a:link{
 */
 .class-help-in{
     width: 100%;
-    height: 30vw; 
+    height: 46vw; 
 }
 .class-help-in h1{
     margin-right: 1.6vw;
 }
 .help-in-description{
     display: flex;
-    height: 90%;
+    margin-top: 2vw;
 }
 .help-box{
     flex: 1 1 0;
     margin: 1.6vw;
-    border-right: 3px solid;
+    border-right: 5px solid;
     border-image: linear-gradient(#ff318a, #ff7158) 1;
 }
 .help-box h3, .help-box h6{
     margin-right: 1.5vw;
+    line-height: 1.5;
 }
 .help-box h3{
     margin-top: 1.5vw;
@@ -246,8 +293,9 @@ a button, a span, a figure, a:link{
 */
 .cost{
     width: 100%;
-    height: 31.875vw;
+    height: 45vw;
 }
+
 .cost .content-box {
     background-color: #f5f5f5;
     padding-top: 0px;
@@ -257,8 +305,11 @@ a button, a span, a figure, a:link{
     flex: 1 1 0;
 }
 .cost-description{
-    margin-top:5.2vw;
+    margin-top:7.2vw;
     text-align: right;
+}
+.cost-description span{
+    font-family: 'afek-bold';
 }
 .cost-description div{
     margin-right: 5.7vw;
@@ -274,57 +325,92 @@ a button, a span, a figure, a:link{
     position: relative;
 }
 .side-rectangle-big{
-    width: 21.875vw;
+    width: 33.75vw;
     opacity: 0.4;
 }
 .anime-img{
     position: absolute;
     right: 0px;
-    margin-top:5.2vw;
+    margin-top:7.2vw;
     text-align: right;
 }
 .anime-img img{
-    width: 80%;
+    width: 75%;
 }
 .anime-img figcaption h6{
     margin-left: 40%;
     text-align: right;
+    margin-top: 1vw;
 }
-
 /*
 ******************
 * program
 ******************
 */
 .program{
-    width: 100%;
-    text-align: center;
+    width: 100%;  
+    background: #f5f5f5;
+    margin-top: 7.8vw;
+}
+.program .display-flex{
+    justify-content: center;
+}
+#title-for-program{
+    margin-right: 12vw;  
+    padding-top: 7.8vw;
 }
 table{
-    margin: 2vw;
+    margin-top: -1.8vw;
     font-family: 'afek-regular';
-    font-size: 1.041vw; 
-    
+    font-size: 20px; 
+    line-height: 18px;
+}
+table tr td:nth-child(3){
+    font-family: 'almoni-tzar-bold'; 
+    font-size: 28px;
+    text-align: left;
+}
+table tr td:nth-child(2){
+    font-family: 'almoni-tzar'; 
+    font-size: 28px;
+    font-weight: 500;
+}
+table tr:nth-child(1) td:nth-child(2){
+    font-family: 'almoni-tzar-bold';
+    font-size: 28px;
+    text-align: left;
 }
 table tr{
-    border-bottom: 1px solid gray;
+    border-bottom: 1px solid rgb(175, 173, 173);
+}
+table tr:last-child{
+    border-bottom:none;
 }
 table span{
     font-family: 'almoni-tzar-bold';     
     font-size: 1.45vw;
 }
 table img{
-    width: 70%;
+    width: 50%;
 }
 table td{
     padding: 2vw;
     text-align: right;
 }
-.table-and-img table {
-   width: 70%;
-}
 .group-28{
-    height:  70vw;
+    height: 180vh;
+    margin-right: 5.7vw;
+}
+table .enlish-font{
+    font-weight: 900;
+}
+table ul{
+    direction: rtl;
+    list-style-type: square;
+    margin-top: -0.5vw;
+}
+table ul li{
+    line-height: 1.8;
 }
 /*
 ******************
@@ -333,21 +419,27 @@ table td{
 */
 .tomer-sharon{
     width: 100%;
-    height: 41.82vw;
-    background-image:url('./img/researching.png'); 
-    background-size: cover;
+    height: 62vw;
+    max-height: 803px; 
+    background: black;
+    background-image:url('./img/sharon.png'); 
+    background-size: contain;
+    background-repeat: no-repeat;  
     color: white;
 }
 .tomer-sharon .display-flex{
     flex-direction: column;
     align-items: flex-end;
+    justify-content: center;
 }
 .about-t-sh{
     width: 50%;
 }
 .tomer-sharon h6{
-    margin-top: 2vw;
-    line-height: 1.5vw;
+    line-height: 27px;
+}
+.about-t-sh h1{
+    
 }
 .icon-twitter{
     font-size: 2.7vw;
@@ -366,37 +458,44 @@ table td{
 */
 .finally-in-israel{
     width: 100%;
-    height: 20vw;
+    height: 31.3vw;
 }
-.world-box, .finally-in-israel h1{
-    width: 22.44vw;
+.finally-in-israel h1{
+    width: 35vw;
 }
 .finally-in-israel .display-flex{
     justify-content: space-between;
 }
 .finally-in-israel img{
-   width:  9.3vw;
+   width:  13.9vw;
+   height: 13.98vw;
 }
 /*
 ******************
 * map
 ******************
 */
-#map{
-    width: 100%;
-    height: 25.52vw;
-    display: flex;
-    position: relative;
+.map{
+    height: 38.43vw;
+}
+.google-map{
+    width:71vw;
+    background-image: url('./img/map.png');
+    background-size: contain;
 }
 .address-box{
-    width: 18.82vw;
+    width: 28vw;
     background: #d4d4d4;
 }
 .map .content-box{
-    padding-top: 0vw;
+    padding-top: 0vw; 
+}
+.map .display-flex{
+    justify-content: space-around;
 }
 .address-box img{ 
-    width: 100%;
+    width: 28vw;
+    height: 11vw;
     margin-top: 2.55vw;
 }  
 .address-box h2{
@@ -408,7 +507,15 @@ table td{
 }
 .address-box h2, .address-box h6{
    padding-right: 1.7vw;
-   padding-left: 1.7vw;
+   padding-left: 1.7vw; 
+}
+#box-for-text-in-adress-box{
+    border-right: 3px solid #0069fb; 
+    padding-right: 0.5vw;
+    width: 90%;
+}
+#waze-img{
+    width: 15%;
 }
 /*
 ******************
@@ -417,11 +524,15 @@ table td{
 */
 .arrival{
     width: 100%;
-    height: 30.2vw;  
+    height: 43vw;  
+}
+#header-for-arrival{
+    margin-right: 3.15%;  
+    padding-bottom: 3.15%;
 }
 .arrival .content-box{
     border-style: solid;
-    border-width: 3px;
+    border-width: 5px;
     border-image-source: linear-gradient(30deg, #ff4978, #ff8348);
     border-image-slice: 1;
     justify-content: flex-end;
@@ -429,16 +540,23 @@ table td{
 .isntructions{
     text-align: right;
     width: 30%;
-    margin-right: 2vw;
+    margin-right: 4vw;
     position: relative;
-    margin-top: 4vw;
+    margin-top: 6vw;
 }
 .isntructions img{
     width:90%;
 }
 .bus-or-car{
-    width: 30%;
+    width: 35%;
     margin-right:5.6vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.content-bus-or-car{
+    flex-direction: column;
+    justify-content: space-between;
 }
 .choose-bus-or-car{
     width: 100%;
@@ -447,51 +565,79 @@ table td{
     display: flex;
     justify-content: flex-end;
 }
-.car, .bus{
-    border-bottom: 3px solid black;
+.border-black {
+    border-bottom: 5px solid black;
+    padding-bottom: 1vw;
+}
+.border-gray{
+    border-bottom: 5px solid #D8D8D8;
     padding-bottom: 1vw;
 }
 .car img{
-    width: 1.3vw;
-    height: 1.5vw;
+    width: 26px;
+    height: 29px;
     margin-left: 1vw;
 }
 .bus img{
-    width: 1.3vw; 
-    height: 1.6vw;
+    width: 26px; 
+    height: 31px;
     margin-left: 1vw; 
 }
 .car{
-    flex-basis: 30%;
     cursor: pointer;
     position: relative;
 }
 .bus{
-    margin-right: 2vw;
-    flex-basis: 70%;
+    margin-right: 2vw;  
     cursor: pointer;
-    color:gray;
+    color:#D8D8D8;
+}
+#car-black{
+    display: block;
+}
+#bus-black{
+    display: none;
+}
+#car-gray{
+    display: none;
+}
+#bus-gray{
+    display: block;
+}
+.content-bus-or-car h4{
+    margin-top:1.5vw;
+}
+.content-bus-or-car ul{
+    list-style-image: url(./img/plus.png);
+    margin-top:1.5vw;
+    margin-right: 1.2vw;
+}
+.content-bus-or-car ul li{
+    line-height: 2;
 }
 .content-bus-or-car ul li{
     font-family: 'afek-regular';
-    font-size: 1.14vw;
+    font-size: 22px;
     text-align: right;
+    /* list-style-type:square; */
+    direction: rtl;
 }
 .content-bus-or-car ul li span{
     font-family: 'afek-bold';
-    font-size: 1.14vw;
+    font-size: 22px;
 }
 .content-for-car h4:nth-child(2){
     font-family: 'afek-bold'; 
 }
 .isntructions button{
-    width: 9.06vw;
-    height: 2.91vw;
+    width: 202px;
+    height: 56px;
     background-color: white;
     border: 3px solid #0065ff;
     color: #0065ff;
     font-family: 'almoni-tzar-bold';
-    font-size: 1.25vw;
+    font-size: 24px;
+    margin-top: 1.5vw;
 }
 .info-for-bus{
     display: none;
@@ -502,18 +648,21 @@ table td{
 ******************
 */
 .text-us{
-    margin-top: 5.57vw;
+    margin-top: 7.8vw;
     width: 100%;
-    height: 18.5vw;
+    height: 27.81vw;
     background-image: linear-gradient(13deg, #ff4978, #ff8348);
     color: white;
 }
 .text-us .content-box{
     background-image:url('./img/group-18.png');
-    background-size: 80%;
+    background-size: 90%;
     background-repeat: no-repeat;
     background-position: left;
     text-align: center;
+}
+.text-us .content-box h1{
+    margin-top: 2.5vw;
 }
 /*
 ******************
@@ -522,15 +671,18 @@ table td{
 */
 .create{
     width: 100%;
-    height: 31.09vw;
+    height: 28vw;
+    background-color:rgb(128, 118, 118);
     background-image:url('./img/create.png');
-    background-size: cover;
+    background-size: contain;
+    background-repeat: no-repeat;
     color:white;
     position: relative;
 }
 .create:after{
-    background: black;
-    opacity: 0.8;
+    background: rgb(13, 14, 13);
+    background-blend-mode: normal, overlay;
+    opacity: 0.6;
     position: absolute;
     content: " ";
     width: 100%;
@@ -542,6 +694,7 @@ table td{
 }
 .create .content-box{
     position: relative;
+    padding-top: 1vw;
 }
 .create .content-box div{
     position: absolute;
@@ -551,29 +704,35 @@ table td{
 .create .display-flex{
     justify-content: flex-end;
 }
+.logo-red{
+    margin-top: -10px;
+}
 /*
 ******************
 * footer
 ******************
 */
 .footer{
-    width: 100%;
-    height: 36.6vw;
+    width: 100vw;
+    height: 55vw;
     background: black;
     color: white; 
 }
 .footer h4{
     font-family: 'almoni-tzar-bold'; 
 }
+.footer h6{
+    line-height: 26.5px;
+}
 .choose-create h6, .choose-create h4{
-    width: 12vw;  
+    width: 17.7vw;  
 }
 .choose-create{
-    margin-top: 1vw;
+    margin-top: 3vw;
 }
 .create-option img{
-    height: 10.468vw;
-    width: 12vw;
+    height: 14.8vw;
+    width: 17.7vw;
     position: relative;
 }
 .create-option{
@@ -586,7 +745,7 @@ table td{
     position: absolute;
     content: " ";
     width: 100%;
-    height: 10.468vw;
+    height: 14.8vw;
     top:0px;
     bottom: 0px;
     left: 0px;
@@ -600,6 +759,9 @@ table td{
 }
 .footer hr{
     height: 1px;
-    margin-top: 4vw;
+    margin-top: 7.78vw;
     background-color: #D8D8D8;
 }    
+#footer-end{
+    margin-top: 1.95vw;
+}
