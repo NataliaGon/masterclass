@@ -114,9 +114,9 @@ var self = window;
 		GUI.add(settings, 'fullScreen');
 		  
 		var body = document.querySelector('body');
-	
-		container = document.createElement('div');
 		
+		container = document.createElement('div');
+		container.className = 'aClassName';
 		container.width = innerWidth;
 		container.height = innerHeight;
 		
