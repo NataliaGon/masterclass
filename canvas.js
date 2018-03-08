@@ -117,13 +117,13 @@ var self = window;
 		
 		container = document.createElement('div');
 		container.className = 'aClassName';
-		container.width = innerWidth;
-		container.height = innerHeight;
+		container.width = '2vw';
+		container.height = '2vw';
 		
 		container.style.position = 'absolute';
-		container.style.top = '4vw';
+		container.style.top = '-10vh';
 		container.style.bottom = 0;
-		container.style.left = '-35vw';
+		container.style.left = '-30vw';
 		container.style.right = 0;
 		// container.style.zIndex = -1;
 		container.style.overflow = 'hidden';

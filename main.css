@@ -142,7 +142,7 @@ body{
         padding-left: 4vw;
         padding-right: 4vw;
     }
-    .display-non-in-mob{
+    .display-not-in-mob{
         display:none;
     }
 }
@@ -189,8 +189,8 @@ body{
 */
 .invitation{
     margin-top: 86px;
-    width: auto;
-    height: 45vw;  
+    width: 100vw;
+    height: 35vw;  
     color: white;
 }
 .invitation .content-box h1{
@@ -198,7 +198,7 @@ body{
 }
 .invitation .content-box h2{
     font-family: 'almoni-tzar'; 
-    margin-top: 5vw;
+    margin-top: 2vw;
 }
 .invitation .content-box h4{
     font-family: 'almoni-tzar';  
@@ -357,7 +357,6 @@ body{
     right: 0px;
     margin-right: 3.15vw;
 }
-
 .rectangle-for-mob{
     display: none;
 }
@@ -388,11 +387,11 @@ body{
         display: none;
     }
     .rectangle-for-mob{
+        display: block;
         width: 100%;
         height: 20px;
         position: absolute;
     }
-    
 }
 /*
 ******************
@@ -432,6 +431,9 @@ body{
     }
     .help-in-description{
         flex-direction: column;
+    }
+    .help-box{
+       margin:  3vw;
     }
 }
 /*
@@ -497,7 +499,12 @@ body{
         display: none;;
     }
     .cost-description{
-    padding-bottom: 7.8vw;
+    /* padding-bottom: 7.8vw; */
+    margin-top: 0vw;
+    }
+    .cost .content-box{
+        padding-top: 12vw;
+        padding-bottom: 12vw;
     }
 }
 /*
@@ -566,7 +573,7 @@ table td{
     padding-bottom: 2.7vw;
 }
 .group-28{
-    height: 180vh;
+    height: 103vw;
     margin-right: 5.7vw;
 }
 table .enlish-font{
@@ -752,22 +759,25 @@ table ul li{
     .address-box{
         display: flex;
         flex-direction: column;
-        width: 100%;
-        height: 50%;
+        width: 100vw;
+        height: 48%;
         justify-content: space-around;
         align-items: center;
     }
     .address-box img{
-        width: 47%;
+        width: 100%;
     }
     .google-map{
         width: 100%;
-        height: 50%;
+        height: 48%;
         order:2;
     }
-    .address-box{
-        padding: 7.8vw;
+    #box-for-text-in-adress-box{
+        padding: 12vw;
     }
+    /* .address-box{
+        padding: 7.8vw;
+    } */
 }
 /*
 ******************
