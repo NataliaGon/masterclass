@@ -249,12 +249,12 @@ body{
 */
 .why-important{
     width: 100%;
-    height: 54.45vw;  
+    height: 45vw;  
     background:  #f3f3f3;
 }
 .container-for-video iframe {
-    width: 90.5%;
-    height: 57%;
+    width: 80%;
+    height: 67%;
 }
 .description h1{
     display: block;
@@ -268,6 +268,7 @@ body{
     border-right: 5px solid #0069fb; 
     padding-right: 2.18vw;
     padding-top: 2vw;
+    font-size: 1.44vw;
 }
 @media (min-width:768px){
     .description{
@@ -277,7 +278,7 @@ body{
         flex-basis:47%;
     }
     .description h4{
-        line-height: 2.8125vw;
+        line-height: 2.2vw;
     }
 }
 @media (max-width:767px){
@@ -310,11 +311,14 @@ body{
     }
     .description h4{
         padding-right: 4vw;
+        font-size: 0.64em;
+        line-height: 1.36em;
     }
     .container-for-video iframe{
         width: 89vw;
         height: 50vw;
     }
+    
 }
 /*
 ******************
@@ -499,8 +503,7 @@ body{
         display: none;;
     }
     .cost-description{
-    /* padding-bottom: 7.8vw; */
-    margin-top: 0vw;
+        margin-top: 0vw;
     }
     .cost .content-box{
         padding-top: 12vw;
@@ -514,8 +517,6 @@ body{
 */
 .program{
     width: 100%;  
-    background: #f5f5f5;
-    margin-top: 7.8vw;
 }
 .program .display-flex{
     justify-content: center;
@@ -588,12 +589,19 @@ table ul{
 table ul li{
     line-height: 1.8;
 }
+.program .enlish-font{
+    font-size: 0.9em;
+    font-weight: 100;
+}
 @media (min-width:768px){
     .table-for-mobile{
         display: none;
     }
 }
 @media (max-width:767px){
+    .program .content-box{
+        padding-top: 0;
+    }
     .table-and-img{
         display: none;
     }
@@ -607,7 +615,7 @@ table ul li{
     }
     .table-for-mobile div{
         border-bottom: 1px solid rgb(175, 173, 173);
-        padding: 7.8vw;
+        padding: 3.8vw;
     }
     .table-for-mobile div:last-child{
         border-bottom: none;
@@ -624,6 +632,7 @@ table ul li{
         font-family: 'almoni-tzar';
         font-size: 1.05em;
     }
+    
 }
 /*
 ******************
@@ -661,6 +670,9 @@ table ul li{
     margin-top: 2vw;
 }
 @media (max-width:767px){
+    .tomer-sharon{
+        background-image: none;
+    }
     .about-t-sh{
         width: 100%; 
     }
@@ -669,6 +681,12 @@ table ul li{
     }
     .tomer-sharon {
         height: auto;
+    }
+    .icon-twitter{
+        margin-right: 0.5em;
+    }
+    .icon-twitter, .icon-linkedin2{
+    font-size: 1.7em;
     }
 }
 /*
@@ -712,7 +730,7 @@ table ul li{
 }
 .address-box{
     width: 28vw;
-    background: #d4d4d4;
+    background: #f5f5f5;
 }
 .map .content-box{
     padding-top: 0vw; 
@@ -775,9 +793,7 @@ table ul li{
     #box-for-text-in-adress-box{
         padding: 12vw;
     }
-    /* .address-box{
-        padding: 7.8vw;
-    } */
+    
 }
 /*
 ******************
@@ -909,6 +925,11 @@ table ul li{
 #waze-img{
     width: 15%;
 }
+@media (min-width:768px){
+.isntructions button{
+    display: none;
+}
+}
 @media (max-width:767px){
     .arrival{
         width: 100%;
@@ -999,6 +1020,9 @@ table ul li{
     align-items: flex-end;
     justify-content: center;
 }
+.about-create{
+    width: 50%;
+}
 .create h6{
     margin-top: 1vw;
     line-height: 2.26vw;
@@ -1007,6 +1031,9 @@ table ul li{
     margin-top: -10px;
 }
 @media (max-width:767px){
+    .create{
+        background-image: none;
+    }
     .create .content-box div{
         width: 100%;
     }
@@ -1052,12 +1079,25 @@ table ul li{
     height: 1px;
     margin-top: 7.78vw;
     background-color: #D8D8D8;
+    opacity: 0.5;
 }    
 #footer-end{
     margin-top: 1.95vw;
 }
 .img-switch{
     display:none;
+}
+.img-default{
+    transition-property: all;
+    transition-duration: 1.2s;
+    transition-timing-function: linear;
+    transition-delay: initial;
+}
+.visuallyhidden{
+    opacity: 0;
+}
+.visuallyshow{
+    opacity: 9;
 }
 .create-option div:hover> .img-switch {
     display: block;
@@ -1097,6 +1137,13 @@ table ul li{
     }
     .choose-create h6, .choose-create h4{
         width: 50vw;  
+        margin-right: 3vw;
+    }
+    .choose-create h6{
+        font-size: 0.4em;
+    }
+    .choose-create h4{
+        line-height: normal;
     }
     
 }

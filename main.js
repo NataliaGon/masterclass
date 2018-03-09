@@ -68,5 +68,26 @@ carBtn.addEventListener('click', function () {
     } 
 });
 
-//fonts-animation
+//footer-animation
 
+// var footerImgs = document.querySelectorAll('.img-default');
+// console.log(footerImgs);
+// let i=0;
+//   for(i of footerImgs ){
+//     i.addEventListener('mouseenter', function () {
+//       // this.classList.add('visuallyhidden');
+//       setTimeout(display(this), 8000);
+//      });
+//      i.addEventListener('mouseleave', function () {
+//       // this.classList.add('visuallyshow');
+//       this.style.display="block";
+//       var nextimg=this.nextElementSibling;
+//       nextimg.style.display="none";
+//      });
+//   }
+
+//   function display(object) {
+//     var nextimg=object.nextElementSibling;
+//     object.style.display="none";
+//     nextimg.style.display="block";
+//   }
