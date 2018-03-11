@@ -50,18 +50,20 @@ h3{
 h4{
     font-family: 'afek-regular';
     font-size: 1.875vw;
-    
+    font-weight: 400;
     letter-spacing: 0.3px;
 }
 h5{
     font-family: 'afek-regular';
     font-size: 1.71875vw;
     letter-spacing: 0.3px;
+    font-weight: 400;
 }
 h6{
     font-family: 'afek-regular';
     font-size: 1.5625vw;  
     letter-spacing: 0.3px;
+    font-weight: 400;
 }
 h1,h2,h3,h4,h5,h6{
     direction: rtl;
@@ -123,18 +125,21 @@ body{
         font-size: 0.8em; 
         line-height: 1.7em;
         letter-spacing: 0.3px;
+        font-weight: 400;
     }
     h5{
         font-family: 'afek-regular';
         font-size: 0.825em;
         letter-spacing: 0.3px;
         line-height: 1.74em;
+        font-weight: 400;
     }
     h6{
         font-family: 'afek-regular';
         font-size: .75em;  
         letter-spacing: 0.3px;
         line-height: 1.6em;
+        font-weight: 400;
     }
     .content-box{
         padding-top: 12vw;
@@ -211,9 +216,6 @@ body{
 }
 .invitation .content-box h4{
     font-family: 'almoni-tzar';  
-}
-.invitation span{
-    text-decoration:underline;
 }  
 #box-for-text-invitation{
     margin-right:  5vw;
@@ -251,9 +253,7 @@ body{
     .invitation .content-box h2{
         margin-top: 0;
         font-size: 1.2em;
-    }
-   
-    
+    }  
 }
 /*
 ******************
@@ -277,12 +277,13 @@ body{
     border-right: 5px solid #0069fb; 
     padding-right: 2.18vw;
     padding-top: 2vw;
-    font-size: 1.44vw;
+    font-size: 1.296vw;
 }
 video{
-    width: 32vw;
-    height: 20vw;
-    }
+    width: 46vw;
+    height: 28vw;
+    margin-top: -0.7vw;
+}
 @media (min-width:768px){
     .description{
         flex-basis:53%;
@@ -294,7 +295,6 @@ video{
     .description h4{
         line-height: 2.2vw;
     }
-   
 }
 @media (max-width:977px){
     .why-important{
@@ -1131,6 +1131,9 @@ table ul li{
 .create-option div:hover> .img-default {
     display:none;
 }
+.footer h6{
+    font-size: 1.1vw;
+}
 @media (min-width:768px){
     .footer h6{
         line-height: 2.07vw;
@@ -1162,14 +1165,16 @@ table ul li{
         height: 92%;
     }
     .choose-create h6, .choose-create h4{
-        width: 50vw;  
+        width: 41vw;  
         margin-right: 3vw;
     }
-    .choose-create h6{
-        font-size: 0.4em;
+    .choose-create h6, #footer-end{
+        font-size: 3.5vw;
     }
     .choose-create h4{
         line-height: normal;
+        font-size: 6vw;
     }
+
     
 }
