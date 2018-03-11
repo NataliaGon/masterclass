@@ -221,11 +221,22 @@ body{
 #font-almani{
     font-family: 'almoni-tzar';
 }
-@media (min-width:768px){
+@media (min-width:974px){
   .invitation{
     background-image: linear-gradient(210deg, #ff318a, #ff7158);
   }
 }
+@media (max-width:973px){
+    .invitation{
+        background-image: url('./img/main-background.png');
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .aClassName{
+        display: none;
+        }
+  }
 @media (max-width:767px){
     .invitation{
         height: auto;
@@ -241,15 +252,8 @@ body{
         margin-top: 0;
         font-size: 1.2em;
     }
-    .invitation{
-        background-image: url('./img/main-background.png');
-        background-position: center;
-        background-size: cover;
-        background-repeat: no-repeat;
-    }
-    .aClassName{
-        display: none;
-        }
+   
+    
 }
 /*
 ******************
@@ -261,10 +265,6 @@ body{
     height: 45vw;  
     background:  #f3f3f3;
 }
-/* .container-for-video iframe {
-    width: 80%;
-    height: 67%;
-} */
 .description h1{
     display: block;
     border-right: 5px solid #0069fb; 
@@ -338,7 +338,6 @@ video{
         width: 89vw;
         height: 50vw;
     }
-   
     video{
         width: 86vw;
         height: 60vw;
