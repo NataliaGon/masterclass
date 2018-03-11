@@ -17,7 +17,7 @@
     font-family: 'afek-regular';
     font-style: normal;
     font-weight: 100;
-    src: url(./fonts/afek-light-aaa.otf);    
+    src: url(./fonts/afek-light-aaa.woff);    
 }
 @font-face {
     font-family: 'afek-bold';    
@@ -146,6 +146,15 @@ body{
         display:none;
     }
 }
+@media (max-width:391px){
+    .registration{
+        width: 116px;
+        height: 37px;
+        line-height: 22px;
+        font-size: 16px;
+        font-weight: 800;
+    }
+}
 /*
 ******************
 * header
@@ -252,10 +261,10 @@ body{
     height: 45vw;  
     background:  #f3f3f3;
 }
-.container-for-video iframe {
+/* .container-for-video iframe {
     width: 80%;
     height: 67%;
-}
+} */
 .description h1{
     display: block;
     border-right: 5px solid #0069fb; 
@@ -270,17 +279,28 @@ body{
     padding-top: 2vw;
     font-size: 1.44vw;
 }
+video{
+    width: 32vw;
+    height: 20vw;
+    }
 @media (min-width:768px){
     .description{
         flex-basis:53%;
     }
     .container-for-video{
         flex-basis:47%;
+        margin-right: 2vw;
     }
     .description h4{
         line-height: 2.2vw;
     }
+   
 }
+@media (max-width:977px){
+    .why-important{
+        height: 50vw;  
+    }
+    }
 @media (max-width:767px){
     .why-important{
         height: auto;
@@ -318,8 +338,13 @@ body{
         width: 89vw;
         height: 50vw;
     }
-    
+   
+    video{
+        width: 86vw;
+        height: 60vw;
+        }
 }
+
 /*
 ******************
 * what-you-get
@@ -791,7 +816,9 @@ table ul li{
         order:2;
     }
     #box-for-text-in-adress-box{
-        padding: 12vw;
+        padding: 12vw 2vw 12vw 12vw;
+        margin-top: 2vw;
+        margin-right: 6vw;
     }
     
 }
