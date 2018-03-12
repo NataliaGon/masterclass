@@ -93,7 +93,6 @@ a button, a span, a figure, a:link{
 .registration{
     width: 174px;
     height: 56px;
-    line-height: 22px;
     background-color: #0065ff;
     border: none;
     color: white;
@@ -154,10 +153,11 @@ body{
 @media (max-width:391px){
     .registration{
         width: 116px;
-        height: 37px;
-        line-height: 22px;
+        height: 47px;
         font-size: 16px;
         font-weight: 800;
+        /* padding-top: 10px;
+        padding-bottom: 10px; */
     }
 }
 /*
@@ -672,6 +672,7 @@ table ul li{
     background-repeat: no-repeat;  
     color: white;
 }
+
 .tomer-sharon .display-flex{
     flex-direction: column;
     align-items: flex-end;
@@ -711,6 +712,9 @@ table ul li{
     }
     .icon-twitter, .icon-linkedin2{
     font-size: 1.7em;
+    }
+    .tomer-sharon img{
+        display:none;
     }
 }
 /*
