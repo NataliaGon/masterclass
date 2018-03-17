@@ -1116,8 +1116,9 @@ table ul li{
 }
 .img-switch{
     display:none;
+    /* opacity: 0; */
 }
-.img-default{
+.img-default, .img-switch{
     transition-property: all;
     transition-duration: 1.2s;
     transition-timing-function: linear;
@@ -1127,7 +1128,7 @@ table ul li{
     opacity: 0;
 }
 .visuallyshow{
-    opacity: 9;
+    opacity:1;
 }
 .create-option div:hover> .img-switch {
     display: block;

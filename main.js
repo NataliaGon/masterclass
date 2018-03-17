@@ -8,10 +8,10 @@
 //     var marker = new google.maps.Marker({
 //       position: uluru,
 //       map: map
-      // icon: {
-      //   document.getElementById,
-      //   scaledSize: new google.maps.Size(96, 96)
-      // }
+// icon: {
+//   document.getElementById,
+//   scaledSize: new google.maps.Size(96, 96)
+// }
 //     });
 // }
 
@@ -21,10 +21,10 @@ var busBtn = document.getElementById('bus');
 var carBtn = document.getElementById('car');
 var busContent = document.querySelectorAll('.info-for-bus');
 var carContent = document.querySelectorAll('.info-for-car');
-var busBlack =document.getElementById('bus-black');
-var busGray=document.getElementById('bus-gray');
-var carBlack=document.getElementById('car-black');
-var carGray=document.getElementById('car-gray');
+var busBlack = document.getElementById('bus-black');
+var busGray = document.getElementById('bus-gray');
+var carBlack = document.getElementById('car-black');
+var carGray = document.getElementById('car-gray');
 
 busBtn.addEventListener('click', function () {
 
@@ -38,13 +38,13 @@ busBtn.addEventListener('click', function () {
   carBtn.classList.add("border-gray");
   carGray.style.display = "block";
   carBlack.style.display = "none";
-  
-    for (var i of busContent){
-     i.style.display = "block"
-    }
-    for (var i of carContent){
-      i.style.display = "none"
-     } 
+
+  for (var i of busContent) {
+    i.style.display = "block"
+  }
+  for (var i of carContent) {
+    i.style.display = "none"
+  }
 });
 
 
@@ -60,34 +60,47 @@ carBtn.addEventListener('click', function () {
   busGray.style.display = "block";
   busBlack.style.display = "none";
 
-   for (var i of busContent){
+  for (var i of busContent) {
     i.style.display = "none"
-   }
-   for (var i of carContent){
-     i.style.display = "block"
-    } 
+  }
+  for (var i of carContent) {
+    i.style.display = "block"
+  }
 });
 
 //footer-animation
 
 // var footerImgs = document.querySelectorAll('.img-default');
-// console.log(footerImgs);
-// let i=0;
-//   for(i of footerImgs ){
-//     i.addEventListener('mouseenter', function () {
-//       // this.classList.add('visuallyhidden');
-//       setTimeout(display(this), 8000);
-//      });
-//      i.addEventListener('mouseleave', function () {
-//       // this.classList.add('visuallyshow');
-//       this.style.display="block";
-//       var nextimg=this.nextElementSibling;
-//       nextimg.style.display="none";
-//      });
-//   }
 
-//   function display(object) {
-//     var nextimg=object.nextElementSibling;
-//     object.style.display="none";
-//     nextimg.style.display="block";
-//   }
+// let i = 0;
+// for (i of footerImgs) {
+//   i.addEventListener('mouseenter', function () {
+//     event.preventDefault();
+//     this.classList.remove('visuallyshow');
+//     this.classList.add('visuallyhidden');
+//     var nextimg = this.nextElementSibling;
+//     var def=this;
+//     setTimeout(function () { display(def, nextimg) }, 600);
+//   });
+
+// }
+// var switchImgs = document.querySelectorAll('.img-switch');
+// let j = 0;
+// for (j of switchImgs) {
+//   j.addEventListener('mouseleave', function () {
+//     event.preventDefault();
+//     var previousImg = this.previousElementSibling;
+//     this.style.display = "none";
+//     previousImg.classList.remove('visuallyhidden');
+//     previousImg.classList.add('visuallyshow');
+//     previousImg.style.display = "block";
+    
+//   });
+// }
+
+// function display(def, nextimg) {
+//   def.style.display = "none";
+//   nextimg.style.display = "block";
+//   nextimg.classList.add('visuallyshow');
+ 
+// }
