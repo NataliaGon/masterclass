@@ -821,6 +821,7 @@ table ul li{
     #box-for-text-in-adress-box{
         padding: 12vw 2vw 12vw 12vw;
         margin-top: 2vw;
+        margin-bottom: 2vw;
         margin-right: 6vw;
     }
     
@@ -1000,6 +1001,11 @@ table ul li{
     .isntructions h5{
         line-height: 1.74em;
     }
+}
+@media (max-width:351px){
+    .bus{
+        flex: 0 1 0;
+}
 }
 /*
 ******************
