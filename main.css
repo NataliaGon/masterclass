@@ -1100,7 +1100,6 @@ table ul li{
 .create-option img{
     height: 14.8vw;
     width: 17.7vw;
-    position: relative;
 }
 .create-option{
     position: relative;
@@ -1120,27 +1119,22 @@ table ul li{
 #footer-end{
     margin-top: 1.95vw;
 }
-.img-switch{
-    display:none;
-    /* opacity: 0; */
-}
 .img-default, .img-switch{
     transition-property: all;
     transition-duration: 1.2s;
     transition-timing-function: linear;
     transition-delay: initial;
 }
-.visuallyhidden{
-    opacity: 0;
+.create-option div {
+    position: relative;
 }
-.visuallyshow{
-    opacity:1;
+.img-default {
+    position: absolute;
+    top: 0;
+    left:0;
 }
-.create-option div:hover> .img-switch {
-    display: block;
-}
-.create-option div:hover> .img-default {
-    display:none;
+.img-default:hover {
+    opacity: 0;    
 }
 .footer h6{
     font-size: 1.1vw;
@@ -1170,7 +1164,6 @@ table ul li{
     .create-option img{
         height: 29.6vw;
         width: 35.4vw;
-        position: relative;
     }
     .choose-create{
         height: 92%;

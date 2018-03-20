@@ -68,22 +68,25 @@ carBtn.addEventListener('click', function () {
   }
 });
 
+
+
+
 //footer-animation
 
-// var footerImgs = document.querySelectorAll('.img-default');
-
-// let i = 0;
-// for (i of footerImgs) {
-//   i.addEventListener('mouseenter', function () {
-//     event.preventDefault();
-//     this.classList.remove('visuallyshow');
-//     this.classList.add('visuallyhidden');
-//     var nextimg = this.nextElementSibling;
-//     var def=this;
-//     setTimeout(function () { display(def, nextimg) }, 600);
-//   });
-
+// function a(ev){
+//   ev.alert('hi');
 // }
+
+// function changeDef(event){
+//   console.log(event.target);
+//     a.classList.remove('visuallyshow');
+//     a.classList.add('visuallyhidden');
+//     var nextimg = a.nextElementSibling;
+//     var def=a;
+//     setTimeout(function () { display(def, nextimg) }, 600);
+//   }
+
+
 // var switchImgs = document.querySelectorAll('.img-switch');
 // let j = 0;
 // for (j of switchImgs) {
